@@ -1,4 +1,4 @@
-package com.nextyu.spring.transaction.demo.entity;
+package com.missfresh.spring.transaction.demo.entity;
 
 import lombok.Data;
 
@@ -13,6 +13,11 @@ public class User {
      * 姓名
      */
     private String name;
+
+    public User(Long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
 
     public User(String name) {
         this.name = name;
